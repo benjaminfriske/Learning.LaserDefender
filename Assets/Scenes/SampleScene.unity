@@ -359,6 +359,11 @@ PrefabInstance:
       propertyPath: laserSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3427640905282086668, guid: 1792ed5b6bce03f479c33f0506fb197e,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1792ed5b6bce03f479c33f0506fb197e, type: 3}
 --- !u!1001 &4879593325765976162

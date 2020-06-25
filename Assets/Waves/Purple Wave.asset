@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1d74296b0a81741813ffc01ae8d2e3, type: 3}
   m_Name: Purple Wave
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4879593325681432921, guid: 8fe5537723a6e99429b31b00bf7cc62c,
+  enemyPrefab: {fileID: 4481450721680985303, guid: e7357e85b7eb7db4380ef16f28eb18d3,
     type: 3}
   pathPrefab: {fileID: 9006383011027379734, guid: 25db9968854e6344b8aedad0ab4030be,
     type: 3}

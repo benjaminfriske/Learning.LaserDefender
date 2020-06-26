@@ -16,6 +16,11 @@ public class WaveConfig : ScriptableObject
         return enemyPrefab;
     }
 
+    public GameObject GetPathPrefab()
+    {
+        return enemyPrefab;
+    }
+
     public List<Transform> GetWaypoints()
     {
         var waveWayPoints = new List<Transform>();

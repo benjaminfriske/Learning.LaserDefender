@@ -5,36 +5,39 @@ using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour
 {
-    [SerializeField] WaveConfig waveConfig;
-    [SerializeField] float moveSpeed = 2f;
-
+    WaveConfig waveConfig;
     int waypointIndex = 0;
     List<Transform> waypoints;
 
-    private void Start()
+    public void SetWaveConfig(WaveConfig waveConfig)
     {
-        waypoints = waveConfig.GetWaypoints();
+        Debug.Log("here !");
+        this.waveConfig = waveConfig;
+        this.waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints.First().transform.position;
     }
 
     private void Update()
     {
-        Debug.Log(waypointIndex.ToString() + " : " + waypoints.Count.ToString());
-        if (waypointIndex <= waypoints.Count - 1)
+        if(waveConfig != null)
         {
-            Debug.Log("Here!");
-            var targetPosition = waypoints[waypointIndex].transform.position;
-            var moveThisFrame = moveSpeed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveThisFrame);
-
-            if (transform.position == targetPosition)
+            Debug.Log(waypointIndex.ToString() + " : " + waypoints.Count.ToString());
+            if (waypointIndex <= waypoints.Count - 1)
             {
-                waypointIndex++;
+                Debug.Log("Here!");
+                var targetPosition = waypoints[waypointIndex].transform.position;
+                var moveThisFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
+                transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveThisFrame);
+
+                if (transform.position == targetPosition)
+                {
+                    waypointIndex++;
+                }
             }
-        }
-        else
-        {
-            Destroy(gameObject);
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

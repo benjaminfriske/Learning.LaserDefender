@@ -6,7 +6,6 @@ public class LaserShredder : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Enter here!");
         Destroy(collision.gameObject);
     }
 }

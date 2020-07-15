@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
-    [SerializeField] float laserSpeed = -1f;
+    [SerializeField] float laserSpeed = 10f;
     [SerializeField] GameObject laserPrefab;
 
     private void Start()
@@ -33,7 +33,8 @@ public class Enemy : MonoBehaviour
     private void Fire()
     {
         GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
-        laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
+        laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        shotCounter = UnityEngine.Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -323,6 +323,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fe5537723a6e99429b31b00bf7cc62c, type: 3}
+--- !u!1001 &1182363198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4009020976779885561, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Shredder Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4346fe4cfb9411249badbe37850e53a3, type: 3}
 --- !u!1001 &1773382611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,7 +633,7 @@ PrefabInstance:
     - target: {fileID: 4009020976779885561, guid: 4346fe4cfb9411249badbe37850e53a3,
         type: 3}
       propertyPath: m_Name
-      value: Shredder
+      value: Shredder Top
       objectReference: {fileID: 0}
     - target: {fileID: 4009020976779885566, guid: 4346fe4cfb9411249badbe37850e53a3,
         type: 3}

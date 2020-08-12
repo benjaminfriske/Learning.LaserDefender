@@ -47,11 +47,17 @@ public class Enemy : MonoBehaviour
 
     private void ProcessHit(DamageDealer damageDealer)
     {
-        enemyHealth -= damageDealer.GetDamageAmount();
-
-        if (enemyHealth <= 0)
+        if(damageDealer != null)
         {
-            Destroy(gameObject);
+            enemyHealth -= damageDealer.GetDamageAmount();
+            damageDealer.Hit();
+
+            if (enemyHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+            
         }
+        
     }
 }

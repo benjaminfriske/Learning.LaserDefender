@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3427640905282086666}
   - component: {fileID: 3427640905282086667}
   - component: {fileID: 3427640905282086668}
+  - component: {fileID: 1855557879718073405}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -96,3 +97,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
+  health: 200
+  laserPrefab: {fileID: 0}
+  laserSpeed: 1
+  fireRate: 0.1
+--- !u!68 &1855557879718073405
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3427640905282086665}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.049667835, y: -0.44559097}
+  - {x: -0.35162827, y: -0.32245827}
+  - {x: -0.5808626, y: -0.058649063}
+  - {x: 0.004562378, y: 0.35170364}
+  - {x: 0.50986063, y: -0.041326523}
+  - {x: 0.30682814, y: -0.3194208}
+  - {x: 0.020680666, y: -0.46897507}

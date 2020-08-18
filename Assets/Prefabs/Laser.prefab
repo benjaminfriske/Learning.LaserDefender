@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4677208842508178158}
   - component: {fileID: 4677208842508178159}
-  - component: {fileID: 291330766994584118}
   - component: {fileID: 6069099933181880481}
   - component: {fileID: 1678529144816731488}
   - component: {fileID: -2537703090584020878}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,18 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &291330766994584118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4677208842508178156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05a395bae7ce5de43beb11949a6955f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &6069099933181880481
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

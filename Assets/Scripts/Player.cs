@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [Header(header:"Player")]
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float padding = 1f;
-    [SerializeField] int health = 200;
+    [SerializeField] float health = 200;
 
     [Header(header: "Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -80,7 +80,23 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
 
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if(damageDealer != null)
+        {
+            ProcessHit(damageDealer);
+        }
+        
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamageAmount();
+        damageDealer.Hit();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

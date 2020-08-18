@@ -41,23 +41,20 @@ public class Enemy : MonoBehaviour
     {
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
 
-        // damageDealer.Hit();
-        ProcessHit(damageDealer);
+        if (damageDealer != null)
+        {
+            ProcessHit(damageDealer);
+        }
     }
 
     private void ProcessHit(DamageDealer damageDealer)
     {
-        if(damageDealer != null)
-        {
-            enemyHealth -= damageDealer.GetDamageAmount();
-            damageDealer.Hit();
+        enemyHealth -= damageDealer.GetDamageAmount();
+        damageDealer.Hit();
 
-            if (enemyHealth <= 0)
-            {
-                Destroy(gameObject);
-            }
-            
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
         }
-        
     }
 }

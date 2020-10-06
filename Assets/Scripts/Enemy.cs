@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] float laserSpeed = 10f;
     [SerializeField] GameObject laserPrefab;
+    [SerializeField] GameObject explosionPrefab;
 
     private void Start()
     {
@@ -54,6 +55,7 @@ public class Enemy : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             Destroy(gameObject);
         }
     }

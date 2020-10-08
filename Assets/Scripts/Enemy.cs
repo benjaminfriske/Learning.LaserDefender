@@ -64,9 +64,9 @@ public class Enemy : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-            GameObject explosion = Instantiate(explosionPrefab, Camera.main.transform.position, Quaternion.identity) as GameObject;
+            GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             Destroy(gameObject);
-            AudioSource.PlayClipAtPoint(explosionSfx, transform.position, explosionVolume);
+            AudioSource.PlayClipAtPoint(explosionSfx, Camera.main.transform.position, explosionVolume);
         }
     }
 }
